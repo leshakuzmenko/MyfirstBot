@@ -1,1 +1,1 @@
-print("This is new file")
+print(int(8))

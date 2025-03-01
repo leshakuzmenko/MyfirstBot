@@ -9,7 +9,7 @@ bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
 
-
+@dp.message(Command(commands=['start', 'help']))
 async def process_start_command(message:Message):
     await message.answer('Привет!\nМеня зовут Эхо-бот!\nНапиши мне что-нибудь')
 
